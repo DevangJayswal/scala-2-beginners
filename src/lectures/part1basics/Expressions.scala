@@ -9,19 +9,27 @@ object Expressions extends App {
   println(x)
 
   println(2 + 3 * 4)
-  // + - * / & | ^ << >> >>> (right shift with zero extension)
+  // + - * / 
+  // bitwise operator 
+  // & | ^ << >> >>> (right shift with zero extension)
 
   println(1 == x)
   // == != > >= < <=
+  // ! -> Bang
 
   println(!(1 == x))
-  // ! && ||
+  // ! -> unary
+  // && || -> binary
 
   var aVariable = 2
   aVariable += 3 // also works with -= *= /= ..... side effects
   println(aVariable)
 
-  // Instructions (DO) vs Expressions (VALUE)
+  // Instructions (DO) something (imperative style of programming)
+  // vs 
+  // Expressions get (VALUE) (declarative (functional) style of programming)
+ 
+  // using `var` is called side effects. 
 
   // IF expression
   val aCondition = true
@@ -37,6 +45,8 @@ object Expressions extends App {
   }
 
   // NEVER WRITE THIS AGAIN.
+  // Loops are discouraged to use in scala
+  // looping is very specific to imperative programming 
 
   // EVERYTHING in Scala is an Expression!
 
@@ -44,6 +54,7 @@ object Expressions extends App {
   println(aWeirdValue)
 
   // side effects: println(), whiles, reassigning
+  // reassigning a variable is side effect. side effect in scala are actually expressions returning a Unit.
 
   // Code blocks
 
