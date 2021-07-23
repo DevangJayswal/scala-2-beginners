@@ -2,6 +2,10 @@ package lectures.part1basics
 
 /**
   * Created by Daniel on 07-May-18.
+  Int 4 Byte
+  Long 8 Byte
+  Short 2 Byte
+  
   */
 object ValuesVariablesTypes extends App {
 
