@@ -15,6 +15,7 @@ object Functions extends App {
   println(aParameterlessFunction())
   println(aParameterlessFunction)
 
+  // specifying return type in recursive function is compulsary
   def aRepeatedFunction(aString: String, n: Int): String = {
     if (n == 1) aString
     else aString + aRepeatedFunction(aString, n-1)
